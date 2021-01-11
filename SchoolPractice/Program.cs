@@ -50,6 +50,27 @@ namespace SchoolPractice
                     //generating a new student object below... gets passed into AddStudent method
             history.AddStudent(new Student("Clark", 109, 3, 4.0));
             history.AddStudent(new Student("Terri", 345, 1, 3.9));
+
+
+            Student althea = new Student("Althea");
+            Student isabelle = new Student("Isabelle");
+            Student dwight = new Student("Dwight");
+
+            Console.WriteLine($"Isabelle: {isabelle.StudentId}, GPA: {isabelle.Gpa}, # of Credits: {isabelle.NumberOfCredits}");
+            Console.WriteLine($"Althea: {althea.StudentId}");
+            Console.WriteLine($"Dwight: {dwight.StudentId}");
+
+            isabelle.AddGrade(4, 3.0);
+            isabelle.AddGrade(3, 4.0);
+            isabelle.AddGrade(6, 3.5);
+
+            Console.WriteLine($"Isabelle: {isabelle.StudentId}, GPA: {isabelle.Gpa}, # of Credits:  {isabelle.NumberOfCredits}");
+
+            Teacher newTeach = new Teacher("Albert", "Einstein", "Physics");
+
+            Console.WriteLine(isabelle);
+            
+
         }
     }    
 }
